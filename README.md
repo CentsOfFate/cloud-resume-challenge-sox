@@ -1,67 +1,28 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+## Sarbanes-Oxley (SOX) Audit Modifier Requirements
+Source: https://www.sarbanes-oxley-101.com/sarbanes-oxley-audits.htm
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit her [website](http://themes.3rdwavemedia.com/) for more themes.
+The Sarbanes Oxley Act requires all financial reports to include an Internal Controls Report. This shows that a company's financial data are accurate (within 5% variance) and adequate controls are in place to safeguard financial data. Year-end financial dislosure reports are also a requirement. An independent external SOX auditor is required to review controls, policies, and procedures during a Section 404 audit.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+An audit will also look at personnel and may interview staff to confirm that their duties match their job description, and that they have the required training to safely access financial information.
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
+Specifically, SOX sections 302, 404 and 409 require the following parameters and conditions must be monitored, logged and audited:
 
-## Installation
+* Internal controls
+* Network activity
+* Database activity
+* Login activity (success and failures)
+* Account activity
+* User activity
+* Information Access
 
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository
-* Go to settings and set master branch as Github Pages source.
-* Your new site should be ready at `https://<username>.github.io/online-cv/`
-* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
+SOX auditing requires that "internal controls and procedures" can be audited using a control framework like COBIT. Log collection and monitoring systems must provide an audit trail of all access and activity to sensitive business information.
 
-Change all the details from one place: ``_data/data.yml``
+A review of a company's internal controls is often the largest components of a SOX compliance audit. Internal controls include all IT assets, including any computers, network hardware, and other electronic equipment that financial data passes through. A SOX IT audit will look at the following internal control items:
 
-## To preview/edit localy with docker
+* **IT security**: Ensure that proper controls are in place to prevent data breaches and have tools ready to remediate incidents should they occur. Invest in services and equipment that will monitor and protect your financial database.
 
-```sh
-docker-compose up
-```
+* **Access controls**: This refers to both the physical and electronic controls that prevent unauthorized users from viewing sensitive financial information. This includes keeping servers and data centers in secure locations, implementing effective password controls, and other measures.
 
-*docker-compose.yml* file is used to create a container that is reachable under http://localhost:4000.
-Changes *_data/data.yml* will be visible after a while.
+* **Data backup**: Maintain backup systems to protect sensitive data. Data centers containing backed-up data, including those stored off-site or by a third-party are also subject to the same SOX compliance requirements as those hosted on-site.
 
-## Skins
-
-There are 6 color schemes available:
-
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
-
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
-
-## Credits
-
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
-
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
-
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
-
+* **Change management**: This involves the IT department process for adding new users and computers, updating and installing new software, and making any changes to databases or other data infrastructure components. Keep records of what was changed, in addition to when it was changed and who changed it.
