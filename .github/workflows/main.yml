@@ -19,7 +19,7 @@ jobs:
           
     - uses: helaili/jekyll-action@2.4.0    # Choose any one of the Jekyll Actions
       with:                                # Some relative inputs of your action
-        build-only: true
+        build_only: true
         
     - uses: azure/login@v1
       with:
