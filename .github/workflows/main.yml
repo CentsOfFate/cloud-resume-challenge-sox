@@ -30,7 +30,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --overwrite --account-name crcsox --auth-mode key -d '$web' -s "_site/*"
+            az storage blob upload-batch --overwrite --account-name crcsox --auth-mode key -d '$web' -s "/github/workspace/./_site/*"
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
