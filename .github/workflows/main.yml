@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "RESOURCE_GROUP"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "cdn-crc" --name "https://crc.azureedge.net" --resource-group "cloud-resume-challenge-sox"
            
   # Azure logout
     - name: logout
