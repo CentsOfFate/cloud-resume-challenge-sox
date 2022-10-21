@@ -24,9 +24,6 @@ jobs:
     - uses: azure/login@v1
       with:
         creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
-        
-    - name: Generate _site
-      run: bundle exec jekyll build
           
     - name: Upload to blob storage
       uses: azure/CLI@v1
