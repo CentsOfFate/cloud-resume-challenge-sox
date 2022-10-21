@@ -20,6 +20,7 @@ jobs:
     - uses: helaili/jekyll-action@2.4.0    # Choose any one of the Jekyll Actions
       with:                                # Some relative inputs of your action
         build_only: true
+        build_dir: "_site"
         
     - uses: azure/login@v1
       with:
@@ -29,7 +30,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --overwrite --account-name crcsox --auth-mode key -d '$web' -s "jekyll_build/"
+            az storage blob upload-batch --overwrite --account-name crcsox --auth-mode key -d '$web' -s "_site/"
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
