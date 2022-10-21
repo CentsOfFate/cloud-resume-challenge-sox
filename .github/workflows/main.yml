@@ -12,6 +12,9 @@ jobs:
     - uses: azure/login@v1
       with:
         creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+        
+    - name: Generate _site
+      run: bundle exec jekyll build
           
     - name: Upload to blob storage
       uses: azure/CLI@v1
@@ -22,7 +25,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "cdn-crc" --name "https://crc.azureedge.net" --resource-group "cloud-resume-challenge-sox"
+           az cdn endpoint purge --content-paths  "/_site/*" --profile-name "cdn-crc" --name "crc" --resource-group "cloud-resume-challenge-sox"
            
   # Azure logout
     - name: logout
