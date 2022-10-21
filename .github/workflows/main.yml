@@ -20,7 +20,7 @@ jobs:
     - uses: helaili/jekyll-action@2.4.0    # Choose any one of the Jekyll Actions
       with:                                # Some relative inputs of your action
         build_only: true
-        build_dir: "_site"
+        build_dir: "/github/workspace/./_site"
         
     - uses: azure/login@v1
       with:
