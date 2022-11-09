@@ -15,10 +15,9 @@ sidebar:
     email: charlie.dalldorf@gmail.com
     phone: 605-924-0660
     timezone: Central Standard Time (CST)
-    website: blog.webjeda.com #do not add http://
+    website: nextjs-blog-ecru-omega.vercel.app/ #do not add http://
     linkedin: charlie-dalldorf
     github: charliedalldorf
-    pdf: http://www.africau.edu/images/default/sample.pdf
 
 education:
     title: Education
